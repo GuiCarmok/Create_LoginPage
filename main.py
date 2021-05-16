@@ -1,12 +1,8 @@
-########################################################################################
-######################          Import packages      ###################################
-########################################################################################
 from flask import Blueprint, render_template, flash
 from flask_login import login_required, current_user
 from __init__ import create_app, db
 
-########################################################################################
-# our main blueprint
+
 main = Blueprint('main', __name__)
 
 @main.route('/') # home page that return 'index'
